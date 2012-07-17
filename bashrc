@@ -148,7 +148,3 @@ export EDITOR='vi'
 
 #complete -W "$(_ssh_completion)" ssh
 
-function sync()
-{
-	
-}
