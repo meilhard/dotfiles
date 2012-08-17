@@ -1,0 +1,22 @@
+[user]
+	name = Marc Eilhard
+	email = marc.eilhard@native-instruments.de
+[color]
+	ui = true
+[credential]
+	helper = store
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	last = log -1 HEAD
+	unstage = reset HEAD --
+	lg = log --graph --pretty=oneline
+	amend = commit --amend -C HEAD
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[core]
+	autocrlf = true
+[push]
+	default = tracking
