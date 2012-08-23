@@ -114,6 +114,12 @@ alias spell='/usr/local/bin/spell'
  alias ..='cd ..'
  alias ...='cd ../..'
 
+alias g='git'
+
+
+# Autocomplete for 'g' as well
+complete -o default -o nospace -F _git g
+
 # Functions
 # #########
 
@@ -148,3 +154,8 @@ export EDITOR='vi'
 
 #complete -W "$(_ssh_completion)" ssh
 
+# Fancy prompt
+#export PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\]$(__git_ps1 " (%s)") \w \$\[\033[00m\] "
+#export PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] "
+export PS1="\[\e[32;1m\]\u\[\e[0m\]\[\e[32m\]@\h \[\e[36m\]\w \[\e[33m\]\$ \[\e[0m\]"
+#export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
